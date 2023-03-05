@@ -1,0 +1,163 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src = "script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="setTimeout(akt,500)">
+    <div id="stan_konta"></div>
+    <div id="fundusze">
+        <div class="fundusz"> <!--złoto-->
+            <h1>Złoto</h1>
+            <div>
+            <h2 class = "cena">280zł / gram</h2>
+            <h2 name="roznica" class="wzrost">8,98%</h2>
+            </div>
+            <div id="wyk0" class="wykres">
+            </div>
+            <div class="posiadane">
+                <div class="pw">
+                   <div class="duza">0 g</div>
+                    <div class="pl">W posiadaniu</div>
+                </div>
+            </div>
+            <div class="posiadane posiadane2">
+                <div class="pw">
+                   <div class="duza2">3640 zł</div>
+                    <div class="pl">Wartość</div>
+                </div>
+            </div>
+            <button onclick="wys(0,true)" class="ks">Kup</button>
+            <button onclick="wys(0,false)" class="ks w2">Sprzedaj</button>
+        </div>
+        <div class="fundusz"> <!--obligacje-->
+            <h1>Fundusz obligacji</h1>
+            <div>
+            <h2 class = "cena">280zł / gram</h2>
+            <h2 name="roznica" class="wzrost">8,98%</h2>
+            </div>
+            <div id="wyk1" class="wykres">
+            </div>
+            <div class="posiadane">
+                <div class="pw">
+                   <div class="duza">0</div>
+                    <div class="pl">W posiadaniu</div>
+                </div>
+            </div>
+            <div class="posiadane posiadane2">
+                <div class="pw">
+                   <div class="duza2">3640 zł</div>
+                    <div class="pl">Wartość</div>
+                </div>
+            </div>
+            <button onclick="wys(1,true)" class="ks">Kup</button>
+            <button onclick="wys(1,false)" class="ks w2">Sprzedaj</button>
+        </div>
+        <div class="fundusz"> <!--rynek pieniezny-->
+            <h1>Fundusz rynku pieniężnego</h1>
+            <div>
+            <h2 class = "cena">280zł / gram</h2>
+            <h2 name="roznica" class="wzrost">8,98%</h2>
+            </div>
+            <div id="wyk2" class="wykres">
+            </div>
+            <div class="posiadane">
+                <div class="pw">
+                   <div class="duza">0</div>
+                    <div class="pl">W posiadaniu</div>
+                </div>
+            </div>
+            <div class="posiadane posiadane2">
+                <div class="pw">
+                   <div class="duza2">3640 zł</div>
+                    <div class="pl">Wartość</div>
+                </div>
+            </div>
+            <button onclick="wys(2,true)" class="ks">Kup</button>
+            <button onclick="wys(2,false)" class="ks w2">Sprzedaj</button>
+        </div>
+        <div class="fundusz"> <!--stabilny wzrost-->
+            <h1>Fundusz stabilnego wzrostu</h1>
+            <div>
+            <h2 class = "cena">280zł / gram</h2>
+            <h2 name="roznica" class="wzrost">8,98%</h2>
+            </div>
+            <div id="wyk3" class="wykres">
+            </div>
+            <div class="posiadane">
+                <div class="pw">
+                   <div class="duza">0</div>
+                    <div class="pl">W posiadaniu</div>
+                </div>
+            </div>
+            <div class="posiadane posiadane2">
+                <div class="pw">
+                   <div class="duza2">3640 zł</div>
+                    <div class="pl">Wartość</div>
+                </div>
+            </div>
+            <button onclick="wys(3,true)" class="ks">Kup</button>
+            <button onclick="wys(3,false)" class="ks w2">Sprzedaj</button>
+        </div>
+        <div class="fundusz"> <!--zrownowazony-->
+            <h1>Fundusz zrównoważony</h1>
+            <div>
+            <h2 class = "cena">280zł / gram</h2>
+            <h2 name="roznica" class="wzrost">8,98%</h2>
+            </div>
+            <div id="wyk4" class="wykres">
+            </div>
+            <div class="posiadane">
+                <div class="pw">
+                   <div class="duza">0</div>
+                    <div class="pl">W posiadaniu</div>
+                </div>
+            </div>
+            <div class="posiadane posiadane2">
+                <div class="pw">
+                   <div class="duza2">3640 zł</div>
+                    <div class="pl">Wartość</div>
+                </div>
+            </div>
+            <button onclick="wys(4,true)" class="ks">Kup</button>
+            <button onclick="wys(4,false)" class="ks w2">Sprzedaj</button>
+        </div>
+        <div class="fundusz"> <!--akcyjny-->
+            <h1>Fundusz akcyjny</h1>
+            <div>
+            <h2 class = "cena">280zł / gram</h2>
+            <h2 name="roznica" class="wzrost">8,98%</h2>
+            </div>
+            <div id="wyk5" class="wykres">
+            </div>
+            <div class="posiadane">
+                <div class="pw">
+                   <div class="duza">0</div>
+                    <div class="pl">W posiadaniu</div>
+                </div>
+            </div>
+            <div class="posiadane posiadane2">
+                <div class="pw">
+                   <div class="duza2">3640 zł</div>
+                    <div class="pl">Wartość</div>
+                </div>
+            </div>
+            <button onclick="wys(5,true)" class="ks">Kup</button>
+            <button onclick="wys(5,false)" class="ks w2">Sprzedaj</button>
+        </div>
+    </div>
+    <div id="zas"></div>
+    <div id="kupno">
+        <h1 id="tyt">Fundusz zrównoważony</h1>
+        <div>
+        <button class="pm" onclick="zmf()">-</button>
+        <input id="ilosc" value = "1" type="number" class="qty">
+        <button class="pm" onclick="ilosc.value++">+</button>
+        </div>
+        <button class="anuluj" onclick="sch()">Anuluj</button>
+        <button class="dalej" onclick="kup()">Kup</button>
+    </div>
+</body>
+</html>
