@@ -2,7 +2,7 @@
 
 li = 0
 n = 6 // liczba wszystkich funduszy
-dl = 200
+dl = 400
 
 function linia(x1,x2,y1,y2,x){
     d = x2 - x1
@@ -216,7 +216,7 @@ function akt(){
     stan_konta.innerText = elkw(bank)
     if(li < dl - 101){
         setTimeout(akt,500);
-        li = li + 0.25;
+        li = li + 0.125;
     }else{
         for(i = 0; i < n;i++){
             bank = bank + kursy[i] * posiadane[i]
