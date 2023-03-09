@@ -2,7 +2,7 @@
 
 li = 0
 n = 6 // liczba wszystkich funduszy
-dl = 400
+dl = 2400
 
 function linia(x1,x2,y1,y2,x){
     d = x2 - x1
@@ -136,19 +136,13 @@ function gen(dlug, start,ogol,wach,odg){
     return wyj
 }
 krach = Math.floor(Math.random() * 200)
-do_konca = [
-    gen(dl,280,Math.pow(1 + (8 / 100), 1/12) - 1,0.4,-0.1),
-    gen(dl,1000,Math.pow(1 + (4 / 100), 1/12) - 1,0.2,0.7),
-    gen(dl,1000,Math.pow(1 + (2 / 100), 1/12) - 1,0.3,1),
-    gen(dl,1000,Math.pow(1 + (7 / 100), 1/12) - 1,0.4,1.5),
-    gen(dl,1000,Math.pow(1 + (9 / 100), 1/12) - 1,0.5,1.7),
-    gen(dl,1000,Math.pow(1 + (10 / 100), 1/12) - 1,0.6,3)]
+do_konca = stock
 bank = 100000000 //konto w banku w groszach, tu 1 000 000 zl
 posiadane = [0,0,0,0,0,0]
 kursy = [28000,20000]
-nazwy = ["złoto", "Fundusz obligacji","Fundusz rynku pienieznego","Fundusz stabilnego wzrostu","Fundusz zrównoważony","Fundusz akcyjny"]
-koncowki = [" g", "", "", "", "", ""]
-dzielniki = [" / gram", "", "", "", "", ""]
+nazwy = ["złoto", "Fundusz obligacji","Fundusz rynku pienieznego/konserwatywny","Fundusz stabilnego wzrostu","Fundusz zrównoważony","Fundusz akcyjny"]
+koncowki = [" uncje/a/i", "", "", "", "", ""]
+dzielniki = [" / uncja", "", "", "", "", ""]
 
 akt_indeks = 0
 
@@ -216,7 +210,7 @@ function akt(){
     stan_konta.innerText = elkw(bank)
     if(li < dl - 101){
         setTimeout(akt,500);
-        li = li + 0.125;
+        li = li + 1;
     }else{
         for(i = 0; i < n;i++){
             bank = bank + kursy[i] * posiadane[i]
