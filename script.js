@@ -2,7 +2,7 @@
 
 li = 0
 n = 6 // liczba wszystkich funduszy
-dl = 2400
+dl = 2500
 
 function linia(x1,x2,y1,y2,x){
     d = x2 - x1
