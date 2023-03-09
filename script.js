@@ -140,7 +140,7 @@ do_konca = stock
 bank = 100000000 //konto w banku w groszach, tu 1 000 000 zl
 posiadane = [0,0,0,0,0,0]
 kursy = [28000,20000]
-nazwy = ["złoto", "Fundusz obligacji","Fundusz rynku pienieznego/konserwatywny","Fundusz stabilnego wzrostu","Fundusz zrównoważony","Fundusz akcyjny"]
+nazwy = ["złoto", "Fundusz obligacji","Fundusz rynku pienieznego / konserwatywny","Fundusz stabilnego wzrostu","Fundusz zrównoważony","Fundusz akcyjny"]
 koncowki = [" uncja", "", "", "", "", ""]
 dzielniki = [" / uncja", "", "", "", "", ""]
 
